@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="简易网页翻译扩展的隐私政策：翻译内容、服务配置、本地存储、第三方服务和用户控制。">
+  <title>隐私政策 · 简易网页翻译</title>
+  <style>
+    :root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f4f7fc;color:#20304a;font:16px/1.85 system-ui,-apple-system,"Segoe UI","Microsoft YaHei",sans-serif}main{max-width:860px;margin:40px auto;padding:40px;background:#fff;border:1px solid #dfe7f2;border-radius:16px}header{border-bottom:1px solid #dfe7f2;padding-bottom:24px}.brand{color:#2563eb;font-weight:650}h1{font-size:32px;margin:8px 0}h2{font-size:21px;color:#122749;margin-top:32px}p,ul{margin:12px 0}li{margin:8px 0}a{color:#1d4ed8;overflow-wrap:anywhere}.meta,footer{color:#64748b;font-size:14px}.summary{padding:16px 20px;background:#eff6ff;border-left:4px solid #2563eb;margin:24px 0}footer{border-top:1px solid #dfe7f2;margin-top:32px;padding-top:20px}@media(max-width:600px){main{margin:0;padding:24px 20px;border:0;border-radius:0}h1{font-size:28px}}
+  </style>
+</head>
+<body>
+<main>
+<header><div class="brand">简易网页翻译</div><h1>隐私政策</h1><div class="meta">生效及最后更新日期：2026 年 10 月 22 日<br>适用范围：Chrome、Edge 和 Firefox 版本的“简易网页翻译”扩展</div></header>
+<p>本扩展由 GitHub 用户 <a href="https://github.com/nofearluo-cmyk">nofearluo-cmyk</a> 维护，提供网页翻译、划词翻译和文本翻译功能。本政策说明扩展如何访问、使用、保存和传输数据。</p>
+<div class="summary">翻译内容会发送到您自行配置的模型服务或网关。服务地址、API Key 和模型设置保存在浏览器本地。扩展没有内置广告或使用行为分析系统，也不将翻译内容额外发送到开发者运营的数据收集服务。</div>
+<h2>1. 处理哪些数据</h2>
+<ul>
+  <li><strong>待翻译内容及译文：</strong>您请求翻译的网页文本、选中的文字，以及在文本翻译界面输入或粘贴的内容。文本可能包含您或他人的个人信息，具体取决于所选内容。</li>
+  <li><strong>翻译服务配置：</strong>您填写的服务地址（Base URL）、API Key、模型名称及请求超时配置，用于连接您指定的服务。</li>
+  <li><strong>当前页面信息：</strong>在执行网页翻译或恢复原文时，扩展使用当前标签页标识及网址判断操作目标和页面是否支持翻译。扩展不读取浏览器历史记录，也不建立浏览历史档案。</li>
+</ul>
+<h2>2. 如何使用和传输数据</h2>
+<p>网页内容脚本用于响应翻译操作和显示划词翻译入口。选中文字本身不会立即向翻译服务发送请求；点击翻译入口后才会发送选中的内容。整页翻译由您发起，启用期间可继续处理该页面新增的待翻译内容。文本翻译界面会在您输入后自动发起翻译。</p>
+<p>扩展将待翻译内容、翻译提示及模型名称发送到您配置的服务地址，并使用 API Key 进行请求认证。获取模型列表及测试连接时，也会向该服务发出相应请求。译文返回后在网页或文本翻译界面展示。API Key 会发送给您配置的服务，而不只是保存在本地。</p>
+<p>服务提供方可能接收到网络请求必需的信息，例如 IP 地址、请求时间和请求头。扩展不额外发送完整浏览历史用于广告、画像或分析。</p>
+<h2>3. 本地保存与保留期限</h2>
+<ul>
+  <li>服务配置通过浏览器扩展本地存储保存，直至您修改、清除配置或由浏览器移除相关扩展数据；扩展不使用浏览器同步存储来同步这些配置。</li>
+  <li>从弹窗打开独立标签页时，两栏文本、翻译状态及待完成翻译的方向会暂存在扩展来源的本地存储中。新页面读取成功后删除用于传递的记录；若打开或读取被中断，记录可能残留，直至相关扩展数据被清除。</li>
+  <li>独立标签页使用会话存储保留文本和状态，以便刷新后恢复。保留时间取决于浏览器的标签页会话及会话恢复机制。</li>
+  <li>网页中的原文、译文及翻译状态主要随当前页面保留，关闭或重新加载页面会结束相应页面状态。本扩展不提供开发者服务器上的翻译历史存储。</li>
+</ul>
+<h2>4. 第三方服务及共享</h2>
+<p>翻译服务由您选择和配置，可能是第三方模型提供方、自建服务或代理网关。所选服务可能位于其他国家或地区，其日志记录、数据保留、模型训练使用及删除方式受该服务自身的条款和隐私政策约束；开发者无法代其作出不保留或不训练的承诺。使用前请确认该服务适合处理您的内容，并使用可信的 HTTPS 服务地址。</p>
+<p>扩展不出售用户数据，不将用户数据用于广告投放、信用评估或与翻译无关的用途。扩展对用户数据的使用遵循 Chrome Web Store 用户数据政策，包括 Limited Use（有限使用）要求，仅限于提供和维护所说明的翻译功能。</p>
+<h2>5. 权限用途</h2>
+<ul>
+  <li><strong>storage：</strong>在浏览器本地保存和读取翻译服务配置。</li>
+  <li><strong>activeTab：</strong>在用户操作时定位和访问当前活动标签页，以执行网页翻译或恢复原文。</li>
+  <li><strong>scripting：</strong>需要时向当前页面注入随安装包提供的内容脚本及样式。</li>
+  <li><strong>网站访问权限：</strong>在不同网站提供网页和划词翻译，并连接用户自定义地址的翻译服务。</li>
+</ul>
+<h2>6. 您的选择与删除方式</h2>
+<p>您可以随时停止使用翻译功能、在浏览器中限制扩展的网站访问权限或禁用扩展。在“网关配置”页面点击“清除”可删除已保存的服务配置；这不会撤销服务提供方已经收到的请求。文本翻译界面的“清空”用于清除当前显示的两栏内容。</p>
+<p>如需移除本地文本残留，可关闭相关扩展页面并清除扩展来源的存储数据，或卸载扩展并由浏览器移除其数据。若需删除第三方服务已保存的数据或撤销 API Key，请通过对应服务的账户设置或联系该服务提供方处理。</p>
+<h2>7. 安全与政策页面托管</h2>
+<p>API Key 存储在浏览器管理的扩展本地存储中，扩展未额外实现密钥加密保管。请妥善保护您的设备和浏览器账户，不要在公开反馈中提交 API Key、私密原文或其他敏感信息。</p>
+<p>本隐私政策页面托管于 GitHub Pages，不包含开发者添加的统计脚本或广告。访问本页面时，GitHub 可能按其<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">隐私声明</a>处理网站访问所需的网络信息。</p>
+<h2>8. 政策更新与联系方式</h2>
+<p>功能或数据处理方式发生变化时，我们会相应更新本页面及顶部日期。</p>
+<p>如有隐私问题或数据处理请求，请通过 <a href="https://github.com/nofearluo-cmyk/simple-browser-translator/issues">项目问题反馈页面（GitHub Issues）</a>联系维护者。提交问题通常需要 GitHub 账号，且内容公开；请仅描述问题，不要附上密钥或敏感文本。若需提供非公开信息，请先在问题中请求适当的沟通方式。</p>
+<footer>简易网页翻译 · 隐私政策</footer>
+</main>
+</body>
+</html>
